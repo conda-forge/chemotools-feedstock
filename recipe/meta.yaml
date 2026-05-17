@@ -18,8 +18,9 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core
     - pip
+    - hatchling      
+    - hatch-vcs 
   run:
     - python >={{ python_min }}
     - numpy >=2.0.0,<3.0.0
