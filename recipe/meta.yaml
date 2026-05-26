@@ -1,5 +1,5 @@
 {% set name = "chemotools" %}
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/chemotools-{{ version }}.tar.gz
-  sha256: 0c04baa50dcb667171fbd1a04bef3c18efd2e718429de35873079b1878236af3
+  sha256: 1821e75cf346282d3a961d6ecedc4e2134ec0b9426acefa91a6affee9103e7b2
 
 build:
   noarch: python
@@ -19,8 +19,8 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling      
-    - hatch-vcs 
+    - hatchling
+    - hatch-vcs
   run:
     - python >={{ python_min }}
     - numpy >=2.0.0,<3.0.0
